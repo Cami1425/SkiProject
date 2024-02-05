@@ -70,15 +70,22 @@ li {
 
 li a {
     display: block;
-    color: midnightblue;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: white;
+    background-color: #fafafa;
+    color: midnightblue;
 }
+
+.active {
+    background-color: #fafafa;
+    color: midnightblue;
+}
+
 
 /* Rules for Gallery*/
 .galContainer {
@@ -187,6 +194,15 @@ footer a {
     color: #eeeeee;
     background: #233142;
     min-height: 500px;
+    h2 {
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 58px;
+        margin: 0 0 20px;
+        text-align: center;
+    }
 }
 
 .bookingDivRight {
@@ -208,17 +224,8 @@ footer a {
     box-shadow: 2px 3px 8px #a6a4a4;
 }
 
-h2 {
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 58px;
-    margin: 0 0 20px;
-    text-align: center;
-}
 
-/* Rules for Success Message display hidden*/
+/* Rules for Success Message display from hidden*/
 
 .successMessageContainer {
     display: none;
@@ -237,7 +244,7 @@ h2 {
     };
 }
 
-/* Rules for form */
+/* Rules for booking_form */
 fieldset {
     box-shadow: 7px 4px 4px #a6a4a4;
     background-color: #eeeeee;
@@ -263,3 +270,39 @@ input {
     margin: 5px;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+select {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
