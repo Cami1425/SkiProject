@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+         JavaScript 7th Edition
+         Chapter 2
+         Project2 Life Ski
+
+         Author: Camila Lopez
+         Date:  February 4 2024
+
+         Filename: ProjectSki.html
+         Use of form and functions
+      -->
+    <meta charset="UTF-8">
+    <title>Book Classes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="jsProject.js" defer></script>
+</head>
+<body>
+    <!--Space for Title and header -->
+    <header>
+        <h1>Book your class</h1>
+    </header>
+
+    <!--Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="ProjectSki.html">About Life Ski</a></li>
+            <li><a href="Project2_BookClasses.html">Book Classes</a></li>
+            <li><a href="#">Resorts</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Booking section divided page -->
+    <div class="bookingSec">
+        <div class="bookingDiv">
+
+            <!-- Introduction booking -->
+            <h2>Improve your skills</h2>
+            <p>No matter if you are a beginner or advance, improving your ski or snowboard skills,<br>
+                go to the next level with one of our professional instructors.</p><br>
+            <p>Our instructors are certificate and can help you to reach your goals.</p>
+            <img id="instructor" src="images/skiInstructor.jpg" alt="Ski instructor with alumnus">
+        </div>
+
+        <!-- Form to book a class -->
+        <div class="bookingDiv bookingDivRight">
+            <form onsubmit="onSubmit(); return false">
+                <fieldset>
+                    <legend>Book class:</legend><br>
+                    <label for="fname">First name:</label>
+                    <input required type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input required type="text" id="lname" name="lname"><br><br>
+                    <label for="level">Level:</label>
+                    <select required id="level">
+                        <option value="">Please choose an option</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select><br><br>
+                    <label>Age:</label>
+                    <input required type="radio" id="adult" name="age" value="adult">
+                    <label for="adult">Adult</label>
+                    <input required type="radio" id="child" name="age" value="child">
+                    <label for="child">Child</label><br><br>
+
+                    <input type="submit" value="Submit"><br><br>
+                </fieldset>
+            </form>
+
+            <!-- Message after submit with calculation of class cost -->
+            <div class="successMessageContainer" id="msgContainer">
+                <div class="successMessage">
+                    <p>Your information has been submitted successfully!</p><br>
+                    <p>The cost of your class will be: $<span id="cost"></span>
+                    </p><br>
+                    <p>Please follow the instructions to finish your booking</p>
+                    <p>Enjoy your class!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

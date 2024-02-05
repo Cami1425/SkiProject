@@ -173,3 +173,93 @@ footer a {
     text-decoration: none;
     font-size: 1.2em;
 }
+
+/* Rules for div page */
+
+.bookingSec {
+    display: flex;
+    font-family: arial, sans-serif;
+}
+
+.bookingDiv {
+    width: 50%;
+    padding: 2em;
+    color: #eeeeee;
+    background: #233142;
+    min-height: 500px;
+}
+
+.bookingDivRight {
+    color: #222;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rules for improve your skill section */
+#instructor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 2px 3px 8px #a6a4a4;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 58px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* Rules for Success Message display hidden*/
+
+.successMessageContainer {
+    display: none;
+    justify-content: center;
+}
+.successMessage {
+    background-color: #455d7a;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 500px;
+
+    p {
+        color: white;
+        text-align: center;
+    };
+}
+
+/* Rules for form */
+fieldset {
+    box-shadow: 7px 4px 4px #a6a4a4;
+    background-color: #eeeeee;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    label {
+        margin-left: 8px;
+    }
+    input:last-of-type {
+        margin-left: 8px;
+    }
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+input {
+    margin: 5px;
+}
+
