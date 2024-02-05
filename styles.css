@@ -1,0 +1,175 @@
+/*  JavaScript 7th Edition
+    Chapter 1
+    Chapter case
+
+    Life Ski
+    Large format style sheet
+    Author: Camila Lopez
+    Date:   January 28 - 2024
+
+    Filename: styles.css
+*/
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ /* Rules for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande";
+}
+
+/* Rules for the header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: steelblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia;
+    margin: 10px;
+}
+
+/* Rules for navigation bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: cornflowerblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: midnightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+/* Rules for Gallery*/
+.galContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery {
+    margin: 1em;
+    width: 40vh;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 100%;
+    height: 30vh;
+}
+
+.gallery img:hover {
+    opacity: 0.7;
+    transition: .5s ease;
+}
+
+/* Rules for onClick event handler // image viewer */
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Rules for footer */
+
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+    padding-top: 5em;
+}
+
+footer a {
+    color: rgba(44, 56, 100, 0.991);
+    text-decoration: none;
+    font-size: 1.2em;
+}

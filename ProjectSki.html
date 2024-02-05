@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--
+         JavaScript 7th Edition
+         Chapter 1
+         Project Life Ski
+
+         Author: Camila Lopez
+         Date:  January 28 2024
+
+         Filename: ProjectSki.html
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Life Ski</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="jsProject.js" defer></script>
+   </head>
+
+   <body>
+      <!--Image viewer to open thumbnails -->
+      <div id="image-viewer">
+         <span class="close" id="closeButton">&times;</span>
+         <img class="modal-content" id="full-image">
+      </div>
+
+      <!--Space for Title and header -->
+      <header>
+         <h1>Life Ski</h1>
+      </header>
+
+      <!--Navigation bar -->
+      <nav>
+         <ul>
+            <li id="currentPage"><a href="#">About Life Ski</a></li>
+            <li><a href="#">Book Classes</a></li>
+            <li><a href="#">Resorts</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+
+      <!--Galleria options offered by Life Ski -->
+      <div class="galContainer">
+         <div class="gallery" id="ski">
+            <h2>Skiing</h2>
+            <img src="images/Skiing.JPG" alt="Woman skiing in a mountain">
+         </div>
+
+         <div class="gallery" id="snowboarding">
+            <h2>Snowboarding</h2>
+            <img src="images/Snowboarding.jpg" alt="Man Snowboarding">
+         </div>
+
+         <div class="gallery" id="park">
+            <h2>Park</h2>
+            <img src="images/Park.jpg" alt="Man jumping on snowboard">
+         </div>
+      </div>
+
+      <!--Space footer -->
+      <footer>
+         <h3>Life Ski &bull; Project Web Scripting Languages</h3>
+         <p><a href="mailto:cjl2737@email.vccs.edu">cjl2737@email.vccs.edu</a></p>
+      </footer>
+   </body>
+</html>
