@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <title>Book Classes</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="jsProject.js" defer></script>
+    <script src="BookClasses.js" defer></script>
 </head>
 <body>
     <!--Space for Title and header -->
@@ -30,6 +30,7 @@
             <li><a class="active" href="Project2_BookClasses.html">Book Classes</a></li>
             <li><a href="#">Resorts</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li><a href="Project3_Employees.html">Employees</a></li>
         </ul>
     </nav>
 
@@ -50,10 +51,13 @@
             <form onsubmit="onSubmit(); return false">
                 <fieldset>
                     <legend>Book class:</legend><br>
+                    <!-- input for name -->
                     <label for="fname">First name:</label>
                     <input required type="text" id="fname" name="fname"><br>
                     <label for="lname">Last name:</label>
                     <input required type="text" id="lname" name="lname"><br>
+
+                    <!-- select for level -->
                     <label for="level">Level:</label>
                     <select required id="level">
                         <option value="">Please choose an option</option>
@@ -61,11 +65,20 @@
                         <option value="intermediate">Intermediate</option>
                         <option value="advanced">Advanced</option>
                     </select><br><br>
+
+                    <!-- radio for age -->
                     <label>Age:</label>
                     <input required type="radio" id="adult" name="age" value="adult">
                     <label for="adult">Adult</label>
                     <input required type="radio" id="child" name="age" value="child">
                     <label for="child">Child</label><br><br>
+
+                    <!-- radio for duration -->
+                    <label>Duration:</label>
+                    <input required type="radio" id="halfDay" name="duration" value="halfDay">
+                    <label for="halfDay">Half Day</label>
+                    <input required type="radio" id="fullDay" name="duration" value="fullDay">
+                    <label for="fullDay">Full Day</label><br><br>
 
                     <input type="submit" value="Submit"><br><br>
                 </fieldset>
@@ -81,8 +94,38 @@
                     <p>Enjoy your class!</p>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <!-- Select instructor -->
+    <div class="finishBooking">
+        <div>
+            <h1>Your instructor</h1>
+        </div>
+        <div class="instContainer">
+
+            <div class="selector">
+                <!-- radio sport type -->
+                <label>Sport:</label>
+                <input required type="radio" id="skiSport" name="sport" value="skiSport">
+                <label for="skiSport">Ski</label>
+                <input required type="radio" id="snowboardSport" name="sport" value="snowboardSport">
+                <label for="snowboardSport">Snowboard</label><br><br>
+            </div>
+
+
+
+            <!-- select instructor -->
+            <div class="selectInstruct">
+                <select class="selectInstructorInner" required id="selectInstruct" onchange="onInstructorChange()">
+                </select>
+            </div>
+
+            <div id="gallery">
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>

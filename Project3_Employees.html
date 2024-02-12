@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+         JavaScript 7th Edition
+         Chapter 3
+         Project2 Life Ski
+
+         Author: Camila Lopez
+         Date:  February 11 2024
+
+         Filename: Project3_Employees.html
+         Use of form and functions
+      -->
+
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="Project3Employees.js" defer></script>
+</head>
+
+<body>
+
+    <!--Space for Title and header -->
+    <header>
+        <h1>Our Employees</h1>
+    </header>
+
+    <!--Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="ProjectSki.html">About Life Ski</a></li>
+            <li><a href="Project2_BookClasses.html">Book Classes</a></li>
+            <li><a href="#">Resorts</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a class="active"   href="Project3_Employees.html">Employees</a></li>
+        </ul>
+    </nav>
+
+    <!-- Select employee Container-->
+    <div class="checkSalaryContainer">
+        <div>
+            <h1 class="checkSalary">Check Salary</h1>
+        </div>
+
+        <div class="checkSalary">
+
+            <!-- Select employee -->
+            <div class="selectEmployee">
+                <select class="selectEmployeeInner" required id="selectEmployee" onchange="onEmployeeChange()">
+                </select>
+            </div>
+
+            <!-- Display info of Salary for the week -->
+            <div id="salaryInfo">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
