@@ -17,13 +17,13 @@ let hoursWorked = [40, 45, 50, 60, 56];
 
 // Calc salary for 40 hours and extra hours +40
 function paySalary(employee, hoursWorked) {
-    const baseRate = 11; // base rate first 40 hours
-    const extraHoursRate = 15; // rate extra hours
+    const baseRate = 18; // base rate first 40 hours
+    const extraHoursRate = 20; // rate extra hours
     let salary = 0;
     if (hoursWorked <= 40) {
         salary = baseRate * hoursWorked;
     } else {
-        salary = ((hoursWorked - 40) * 15) + 40 * baseRate;
+        salary = ((hoursWorked - 40) * extraHoursRate) + 40 * baseRate;
     }
     document.getElementById('salaryInfo').innerHTML = `
     <div>${employee}</div>
